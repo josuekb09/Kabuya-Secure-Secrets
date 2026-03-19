@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<div class="container-fluid text-center">
+    <i class="fas fa-pen-nib fa-5x mb-4"></i>
+    <h1>Share Something...</h1>
+    <p class="mb-4">Don't worry, it's encrypted and safe.</p>
+
+    <form action="/submit" method="POST">
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="secret" placeholder="Type your secret here" required>
+        </div>
+        <button type="submit" class="btn btn-custom btn-light-custom mt-3">Lock it in</button>
+    </form>
+</div>
+
+<%- include('partials/footer') %>

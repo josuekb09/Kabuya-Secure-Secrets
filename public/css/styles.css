@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* La carte principale utilisée sur toutes les pages */
+.glass-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    max-width: 550px;
+    width: 90%;
+    margin: 20px;
+}
+
+h1 { font-weight: 600; margin-bottom: 1rem; }
+p { font-weight: 300; opacity: 0.9; }
+
+/* Boutons personnalisés */
+.btn-custom {
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-light-custom {
+    background-color: white;
+    color: #764ba2;
+}
+
+.btn-light-custom:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-dark-custom {
+    background-color: #2d3436;
+    color: white;
+}
+
+.btn-dark-custom:hover {
+    background-color: #000;
+    transform: translateY(-3px);
+}
+
+/* Formulaires */
+input.form-control-custom {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box; /* Important pour que le padding n'agrandisse pas l'input */
+    font-size: 1rem;
+}
+
+.secret-text {
+    font-size: 1.6rem;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border-left: 5px solid #fff;
+    margin: 20px 0;
+    word-wrap: break-word;
+}
